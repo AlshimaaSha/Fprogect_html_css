@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 20px;
+            background-color: #e4f0f1;
+        }
+
+        .header {
+            background-color: #349ea8;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-container {
+            overflow: hidden;
+            /* لإخفاء أي جزء من الصورة خارج الحاوية */
+            width: 150px;
+            /* عرض الحاوية */
+            height: auto;
+           border-radius: 50%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+            /* إضافة انتقال لتحسين تأثير الزووم */
+        }
+
+        .image-container:hover img {
+            transform: scale(1.2);
+            /* زووم بنسبة 120% عند مرور المؤشر */
+        }
+   
+    </style>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+            <!-- Home Page Section -->
+            <section id="cv" style="display: flex;  justify-content: space-between;  ">
+                <div>
+                    <!-- /* استخدام flexbox لجعل العناصر في صف واحد */
+                    /*لجعل المسافة بين العناصر متوازنة */
+                    /* لمحاذاة العناصر عمودياً في المركز */ -->
+                    <h1>Alshimaa Shahat</h1>
+                <br>
+                    <ul style="list-style-type: none;">
+                        <li>📚 Faculty of Engineering</li><br>
+                        <li>📧 alshimaashahat21@gmail.com</li><br>
+                        <li>📞 01155980094</li><br>
+                        <li><img src="resorces/country.png" alt="country Image" width="20px" height="auto"> Samalute -
+                            El Minia - Egypt</li><br>
+                        <li>🎓 Graduated in 2022</li><br>
+                        <li><img src="resorces/image2 (2).png" alt="linkedin" width="20px" height="auto"> <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+             
+                <div class="image-container">
+                    <img src="resorces/mypicture.jpeg" alt="Your Image" class="main-image">
+                </div>
+              
+            </section>
+</body>
+
+</html>

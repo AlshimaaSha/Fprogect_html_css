@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 20px;
+            background-color: #e4f0f1;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        #birthday-image {
+            animation: fadeOut 5s forwards;
+        }
+
+        .message-box {
+            animation: fadeIn 5s forwards;
+            visibility: hidden; /* العنصر مخفي بداية */
+            opacity: 0; /* جعل العنصر شفافًا بداية */
+            animation-delay: 5s;
+            flex-direction: column;
+            align-items: center;
+            position: absolute; /* وضعه فوق الصفحة في المنتصف */
+            top: 30%; /* المركز العمودي */
+            left: 30%; /* المركز الأفقي */
+            /* transform: translate(-50%, -50%); محاذاة مركزية دقيقة */
+            text-align: center; /* محاذاة النصوص في المنتصف */
+        }
+
+        /* إخفاء الصورة تدريجيًا */
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
+        }
+
+        /* إظهار الـ message-box بعد 5 ثوانٍ */
+        @keyframes fadeIn {
+            to {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <img id="birthday-image" src="resorces/birthday.jpg" alt="Birthday Image">
+
+        <form  class="message-box" action="thanks.html" method="get">
+            <p>Leave a message for my birthday!</p>
+            <textarea placeholder="Write your message" name="message" style="width: 500px;height: 200px;"></textarea><br>
+            <br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+    </div>
+</body>
+
+</html>

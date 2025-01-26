@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with navigation links -->
+    <header class="header">
+        <a href="#home" class="link">Home</a>
+        <a href="#hobbies" class="link">Hobbies</a>
+        <a href="#birthday" class="link">Birthday</a>
+        <a href="#contact" class="link">Contact Us</a>
+        <a href="#countries" class="link">Countries to Visit</a>
+        <a href="#cv" class="link">My CV</a>
+    </header>
+
+    <!-- Main container with content -->
+    <div class="container">
+        <aside class="sidebar left">Sidebar Left</aside>
+
+        <main class="content">
+            <!-- Home Page Section -->
+            <section id="home">
+                <h1>Welcome to My Home Page!</h1>
+                <img src="your-image.jpg" alt="Your Image" class="main-image" >
+                <p>This is a brief introduction about me. I love exploring new technologies and designing beautiful websites.</p>
+            </section>
+
+            <!-- Hobbies Page Section -->
+            <section id="hobbies">
+                <h1>My Hobbies</h1>
+                <div class="gallery">
+                    <div class="hobby">
+                        <img src="hobby1.jpg" alt="Photography" class="hobby-img">
+                        <p>Photography</p>
+                    </div>
+                    <div class="hobby">
+                        <img src="hobby2.jpg" alt="Traveling" class="hobby-img">
+                        <p>Traveling</p>
+                    </div>
+                    <div class="hobby">
+                        <img src="hobby3.jpg" alt="Reading" class="hobby-img">
+                        <p>Reading</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Birthday Page Section -->
+            <section id="birthday">
+                <h1>My Birthday</h1>
+                <p>It's my birthday! Leave a message.</p>
+                <div id="birthday-message" class="message-box">
+                    <p>Leave a message for my birthday!</p>
+                    <textarea placeholder="Write your message"></textarea>
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </section>
+
+            <!-- Contact Us Page Section -->
+            <section id="contact">
+                <h1>Contact Me</h1>
+                <form action="#" method="POST" class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+            </section>
+
+            <!-- Countries to Visit Page Section -->
+            <section id="countries">
+                <h1>Countries I Want to Visit</h1>
+                <div class="slider">
+                    <div class="slide">
+                        <h2>Japan</h2>
+                        <img src="japan.jpg" alt="Japan">
+                    </div>
+                    <div class="slide">
+                        <h2>France</h2>
+                        <img src="france.jpg" alt="France">
+                    </div>
+                    <div class="slide">
+                        <h2>USA</h2>
+                        <img src="usa.jpg" alt="USA">
+                    </div>
+                </div>
+            </section>
+
+            <!-- My CV Page Section -->
+            <section id="cv">
+                <h1>My CV</h1>
+                <div class="cv-content">
+                    <h2>Personal Info</h2>
+                    <p>Name: John Doe</p>
+                    <p>Email: johndoe@example.com</p>
+
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Graphic Design</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Thank You Page Section -->
+            <section id="thank-you">
+                <h1>Thank You for Your Message!</h1>
+                <p>I appreciate your kind words. Thank you for taking the time to send me a message!</p>
+            </section>
+        </main>
+
+        <aside class="sidebar right">Sidebar Right</aside>
+    </div>
+
+</body>
+</html>

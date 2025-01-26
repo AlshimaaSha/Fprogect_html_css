@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 20px;
+            background-color: #e4f0f1;
+        }
+
+        #countries {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .slider {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 20px;
+            /* Space between images */
+        }
+
+         .slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+  
+    
+    </style>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="countries" style="display: flex;  justify-content: center;  ">
+        <h1>Countries I Want to Visit</h1>
+
+
+        <div class="slider">
+            <div class="slide">
+                <div class="image-container">
+                <img src="resorces/maka.jpg" alt="image1" class="hobby-img">
+            </div>
+                <p>The Holy Mosque</p>
+            </div>
+            <div class="slide">
+                <div class="image-container">
+                <img src="resorces/madina.jpg" alt="image2" class="hobby-img">
+                </div>
+                <p>The Prophet's Mosque</p>
+            </div>
+            <div class="slide">
+                <div class="image-container">
+                <img src="resorces/c3.jpg" alt="image3" class="hobby-img">
+            </div>
+            <p>Jerusalem</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

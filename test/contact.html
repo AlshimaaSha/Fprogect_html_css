@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            background-color: #e4f0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .form-item {
+            margin-bottom: 10px;
+        }
+
+     
+
+        .form-item input, .form-item select, .form-item textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+      
+        .form-actions button {
+            padding: 5px 10px;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form action="thanks.html" method="post">
+            <div class="form-item">
+                <input type="hidden" name="userid">
+                <label for="fname">Name:</label>
+                <input type="text" value="alshimaa" required>
+            </div>
+           
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-item">
+                <label for="password">Password:</label>
+                <input type="password" placeholder="password" required>
+            </div>
+           
+            <div class="form-item">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date">
+            </div>
+            <div class="form-item">
+                <label for="picture">User Picture:</label>
+                <input type="file">
+            </div>
+            <fieldset>
+                <legend>Gender</legend>
+                <div class="form-item radio-group">
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+          
+          
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
